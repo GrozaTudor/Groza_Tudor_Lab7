@@ -90,5 +90,12 @@ namespace Groza_Tudor_Lab7.Data
         {
             throw new NotImplementedException();
         }
+
+        public Task<int> DeleteItemFromShopListAsync(int productId, int shopListId)
+        {
+            return _database.Table<ListProduct>()
+                .Where(lp => lp.ProductID == productId && lp.ShopListID == shopListId)
+                .DeleteAsync();
+        }
     }
 }

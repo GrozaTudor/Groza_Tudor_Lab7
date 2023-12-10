@@ -29,7 +29,8 @@
                 <Button Grid.Row="2" Grid.Column="0" Text="Add to Shop List" MaximumWidthRequest="200" Clicked="OnAddButtonClicked" />
             </Grid>
         </StackLayout>
-    </ContentPage.Content>
+    </ContentPage.Content>
+
 
     <VerticalStackLayout>
         <Label 
