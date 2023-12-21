@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Groza_Tudor_Lab7.Models
 {
-    internal class Shop
+    public class Shop
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }

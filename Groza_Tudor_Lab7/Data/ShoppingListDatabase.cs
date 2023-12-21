@@ -6,6 +6,7 @@ using Groza_Tudor_Lab7.Models;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace Groza_Tudor_Lab7.Data
 {
@@ -67,6 +68,7 @@ namespace Groza_Tudor_Lab7.Data
         {
             return _database.Table<Product>().ToListAsync();
         }
+
         public Task<int> SaveListProductAsync(ListProduct listp)
         {
             if (listp.ID != 0)
@@ -103,6 +105,7 @@ namespace Groza_Tudor_Lab7.Data
         {
             return _database.Table<Shop>().ToListAsync();
         }
+
         public Task<int> SaveShopAsync(Shop shop)
         {
             if (shop.ID != 0)
@@ -114,6 +117,5 @@ namespace Groza_Tudor_Lab7.Data
                 return _database.InsertAsync(shop);
             }
         }
-
     }
 }
